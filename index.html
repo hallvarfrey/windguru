@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://www.windguru.cz/js/wgs_widget.php"></script>
+    <title>Barcares Wind Widget</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: white;
+        height: 100%;
+      }
+      iframe {
+        border: none;
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
-    <div id="wgs_widget_4048_1694862405407">
-      <script>
-        WgsWidget({
-          id_station: 4048,
-          wj: 'knots',
-          tj: 'c',
-          avg_min: 0,
-          tmprh: true,
-          date_format: 'd-m-Y H:i:s T',
-          divid: 'wgs_widget_4048_1694862405407',
-          type: 'curr'
-        });
-      </script>
-    </div>
+    <iframe src="https://www.windguru.cz/int/widget.php?wid=4048&id_spot=4048&id_model=3&step=3&unit_w=knots&unit_t=c&unit_r=mm&unit_s=msl&col_w=1&col_g=1&col_T=1&col_rain=0&col_clouds=0&col_snow=0&col_pres=0&col_dir=1&cols=3&days=2&header=1&line_thick=2&font_size=12&show_day=1&show_hour=1&show_units=1&show_waves=0">
+    </iframe>
   </body>
 </html>
